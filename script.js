@@ -27,7 +27,7 @@ Together, NID and RISD shaped my belief that design is a bridge between craft an
     "indian artforms": "https://www.behance.net/gallery/171551613/Obsession-to-Passion-Narratives-on-products",
     "creative coding": "https://tiyaw.github.io/print-digital/",
     "generative AI": "https://docs.google.com/presentation/d/1T8c1rCqlnTHm49OlP9y0hcrHXgU3jzt8CDno6ELvmw4/edit?usp=share_link",
-    "UN Millennium Fellowship": "https://www.millenniumfellows.org/"
+    "UN Millennium Fellowship": "https://www.millenniumfellows.org/fellow/2024/nid/tiya-ajay-wagh"
   },
   letterSpacing: 14,
   wordSpacing: 25,
