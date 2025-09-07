@@ -89,6 +89,8 @@ let rafId = null;
 let supportsOn = true;
 let bounceTimer = null;
 
+let navBar;
+
 let keywordMap;
 let hasMouseMoved = false; // ADDED: Flag to track initial mouse movement
 
@@ -149,6 +151,7 @@ class FadingLetter {
 /* =============================== p5 ================================ */
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  navBar = document.querySelector('.top-nav');
 
   fullText = config.sentences.join("").replace(/\s+/g, ' ');
 
@@ -319,6 +322,13 @@ function easeInOutCubic(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * 
 
 function handleMouseMovement() {
   if (!hasMouseMoved) return; // MODIFIED: Stop function if mouse hasn't moved yet
+  
+  if (navBar && navBar.classList.contains('is-visible')) {
+    const navRect = navBar.getBoundingClientRect();
+    if (mouseX >= navRect.left && mouseX <= navRect.right && mouseY >= navRect.top && mouseY <= navRect.bottom) {
+      return; // Stop drawing the trail if inside the navbar
+    }
+  }
 
   const logoImg = document.querySelector('.namelogo-svg');
   if (logoImg) {
@@ -452,12 +462,15 @@ function updateSupportsBasedOnScroll() {
   if (y <= SUPPORT_THRESHOLD) {
     ensureSupports();
   } else if (supportsOn) {
+    if (navBar) navBar.classList.add('is-visible'); // <-- ADD THIS LINE
     bounceThenDrop();
   }
 }
 
 function ensureSupports() {
   if (bounceTimer) { clearTimeout(bounceTimer); bounceTimer = null; }
+
+  if (navBar) navBar.classList.remove('is-visible'); 
 
   if (!ground) {
     const wallOptions = { isStatic: true, restitution: 0.2, friction: 0.5 };
