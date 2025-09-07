@@ -74,7 +74,7 @@ const BOUNCE_NEAR_DIST = 60;
 
 // Scroll animation metrics (precomputed to avoid layout reads per frame)
 const scrollAnim = {
-  distance: 700,
+  distance: 1000,
   startScale: 1.0,
   endScale: 0.55,
   reduceMotion: window.matchMedia('(prefers-reduced-motion: reduce)'),
@@ -330,11 +330,20 @@ function handleMouseMovement() {
     }
   }
 
-  const logoImg = document.querySelector('.namelogo-svg');
-  if (logoImg) {
-    const rect = logoImg.getBoundingClientRect();
-    if (mouseX >= rect.left && mouseX <= rect.right && mouseY >= rect.top && mouseY <= rect.bottom) return;
+  if (supportsOn) {
+    const logoImg = document.querySelector('.namelogo-svg');
+    if (logoImg) {
+      const rect = logoImg.getBoundingClientRect();
+      if (mouseX >= rect.left && mouseX <= rect.right && mouseY >= rect.top && mouseY <= rect.bottom) {
+        return;
+      }
+    }
   }
+
+    const footerRect = document.querySelector('.footer').getBoundingClientRect();
+    if (mouseX >= footerRect.left && mouseX <= footerRect.right && mouseY >= footerRect.top && mouseY <= footerRect.bottom) {
+      return; // Stop drawing the trail if inside the footer
+    }
 
   for (let i = fallingWords.length - 1; i >= 0; i--) {
     if (fallingWords[i].isNear(mouseX, mouseY, 20)) return;
