@@ -23,7 +23,7 @@ Together, NID and RISD shaped my belief that design is a bridge between craft an
   keywordLinks: {
     "graphic design": "https://www.linkedin.com/in/tiyawagh/",
     "branding": "https://drive.google.com/file/d/19A_dLi_-okooDaPWj8JGnW2DSRdzS3gf/view?usp=share_link",
-    "ui/ux": "https://drive.google.com/file/d/1mRkbimhIAVAPWL13HWTf8-CyUzJr72ak/view?usp=sharing",
+    "ui/ux": "https://www.figma.com/deck/nsVcGOgg7yR6TH6dTasCGa/UI-UX-PORTFOLIO-FINAL?node-id=1-5637&viewport=-1233%2C-730%2C0.52&t=qKcs5v3cRcBXueq9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     "indian artforms": "https://www.behance.net/gallery/171551613/Obsession-to-Passion-Narratives-on-products",
     "creative coding": "https://tiyaw.github.io/print-digital/",
     "generative AI": "https://docs.google.com/presentation/d/1T8c1rCqlnTHm49OlP9y0hcrHXgU3jzt8CDno6ELvmw4/edit?usp=share_link",
@@ -33,7 +33,7 @@ Together, NID and RISD shaped my belief that design is a bridge between craft an
   wordSpacing: 25,
   fadeSpeed: 1.5,
   gravity: 0.5,
-  fallDelay: 1500,
+  fallDelay: 700,
 };
 
 /* ========================== Globals / Matter ======================== */
