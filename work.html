@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio - Tiya Wagh">
+    <meta name="keywords" content="Tiya Wagh, Portfolio, Graphic Designer, UI/UX Designer, Branding, Marketing, Design">
+    <meta name="author" content="Tiya Wagh">
+    <title>Tiya Wagh</title>
+    <link rel="stylesheet" href="css/work.css"> 
+    <link rel="stylesheet" href="assets/cursor/cursor.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image">
+    <script src="assets/cursor/cursor.js" defer></script>
+
+   <!-- Style block for project-specific colors -->
+  <style>
+    :root {
+      --background-color: #f6f6f6;
+      --text-color: #4f4c4c;
+    }
+   /* Force the navbar logo to inherit the project color (--primary-text-color).
+       Hide the inline image and use the anchor as a masked element to paint the logo. */
+    .nav-logo img.logo-svg { display: none; }
+    .nav-logo a {
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      background-color: var( --text-color);
+      -webkit-mask-image: url("assets/img/Homepage/tW.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      mask-image: url("assets/img/Homepage/tW.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+  <!-- Custom cursor -->
+  <div id="tw-cursor" class="tw-cursor">
+    <div class="tw-cursor__inner"></div>
+  </div>
+
+<!-- NAVIGATION BAR -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
+        <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
+        <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
+        <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
+      </ul>
+    </div>
+  </nav>
+
+<!---------- START PROJECTS SECTION ---------->
+<section class="container">
+  <!-- <div class="project-tab-container">
+      <div class="tab active" onclick="filterProjects('all', event)">All</div>
+      <div class="tab" onclick="filterProjects('branding', event)"> Marketing/Branding</div>
+      <div class="tab" onclick="filterProjects('ui/ux', event)"> UI/UX</div>
+      <div class="tab" onclick="filterProjects('AI', event)"> Emerging Tech </div>
+    </div>
+  </div> -->
+
+
+  <div class="card-container"> 
+      <a href="nike.html" class="card" data-category="branding" aria-label="nike project">
+        <img src="assets/img/Work/Nike.png" alt="nike">
+        <div class="card-content" style="background: rgba(0, 0, 0, 0.9); color: #F68C50;">
+          <h3>activeforever NIKE campiagn</h3>
+          <h6>Campaign Strategy | Digital Ads</h6>
+        </div>
+      </a>
+
+      <a href="thoughts.html" class="card" data-category="branding" aria-label="klenvor project">
+        <img src="assets/img/Work/Thoughts.png" alt="Thoughts">
+        <div class="card-content" style="background: #403423e6; color: #EDCD9E;">
+         <h3>thoughts?</h3>
+          <h6>UI/UX | Social media website</h6>
+        </div>
+      </a>
+
+      <a href="togedoo.html" class="card" data-category="branding" aria-label="togedoo project">
+        <img src="assets/img/Work/Togedoo.png" alt="togedoo">
+        <div class="card-content" style="background: rgba(0, 0, 0, 0.9); color: #F968B2;">
+          <h3>togedoo</h3>
+          <h6>UI/UX | Social media platform</h6>
+        </div>
+      </a>
+
+      <a class="card">
+        <img src="assets/img/Work/On-track.gif" alt="togedoo">
+        <div class="card-content" style="background: rgba(29, 123, 206, 0.9); color: #ffffff;">
+          <h1>(COMING SOON...)</h1>
+          <h3>on track</h3>
+          <h6>Branding | Campaign | Systems design </h6>
+        </div>
+      </a>
+
+      <a href="klenvor.html" class="card" data-category="branding" aria-label="klenvor project">
+        <img src="assets/img/Work/klenvor.png" alt="klenvor">
+        <div class="card-content" style="background: rgba(255, 239, 239, 0.9); color: #D57982;">
+          <h3>klenvor</h3>
+          <h6>Branding | Packaging & Label Design | Digital Ads</h6>
+        </div>
+      </a>
+
+      <a href="youshouldbehair.html" class="card" data-category="branding" aria-label="YOUSHOULDbeHAIR internship">
+          <img src="assets/img/Work/YSBH.png" alt="YOUSHOULDbeHAIR">
+          <div class="card-content" style="background: rgba(31, 30, 30, 0.9); color: #D1DDE6;">
+            <h3>YOUSHOULDbeHAIR</h3`>
+          <h6>Brand Guidelines | Color theory | Social media </h6>
+          </div>
+      </a>
+
+      <a href="boardgame.html" class="card" data-category="branding" aria-label="YOUSHOULDbeHAIR internship">
+          <img src="assets/img/Work/Boardgame.png" alt="Board game">
+          <div class="card-content" style="background: rgba(31, 30, 57, 0.9); color: #ffffff;">
+            <h3>marketing of board games</h3>
+          <h6>UX Research | Systems design thinking</h6>
+          </div>
+      </a>
+  </div>
+</section>
+<!---------- END PROJECTS SECTION ---------->
+
+<!---------- START FOOTER ---------->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-section">
+        What did you find interesting? Let's connect and discuss.
+      </div>
+      <div class="footer-section">
+        <a href="mailto:twagh.design@gmail.com">
+          <i class="fa fa-envelope"></i> twagh.design@gmail.com
+        </a>
+      </div>
+      <div class="footer-section">
+        <a href="https://www.linkedin.com/in/tiyawagh/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> www.linkedin.com/in/tiyawagh/
+        </a>
+      </div>
+    </div>
+  </footer>
+<!---------- END FOOTER ---------->
+
+</body>
+</html>

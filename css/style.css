@@ -1,0 +1,205 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 220vh;
+  background: #000;
+  position: relative; 
+}
+
+/* Overlay canvas so words pass over the page */
+canvas {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 1;            /* below logo (z-index: 2) */
+  pointer-events: auto;  /* keep cursor interaction working */
+}
+
+/* Fixed logo wrapper (animated on scroll) */
+.title-content {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+  will-change: transform;
+  transform: translate3d(0,0,0) scale(1);
+  transform-origin: center center;
+}
+
+.namelogo-svg {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: -25vh;  /* half-peeking from bottom */
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-content { transition: none !important; }
+}
+
+/* ===========================================================
+   Custom Inverting Cursor (lens effect only)
+   =========================================================== */
+/* Hide native cursor everywhere */
+* { cursor: none !important; }
+
+/* Outer follows the pointer (no transition = no lag) */
+.tw-cursor {
+  position: fixed;
+  left: 0; top: 0;
+  width: 10px; height: 10px;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%); /* center on pointer */
+  will-change: left, top;
+  display: none; /* shown on first pointermove */
+}
+
+/* Inner provides the inversion lens */
+.tw-cursor__inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  /* Tiny non-opaque fill helps Safari apply backdrop-filter while looking transparent */
+  background: rgba(255,255,255,0.001);
+  backdrop-filter: invert(1);
+  -webkit-backdrop-filter: invert(1);
+}
+
+/* Fallback: if backdrop-filter unsupported, use difference blend */
+.tw-cursor__inner.no-backdrop {
+  background: #fff;                 /* solid fill to blend */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  mix-blend-mode: difference;       /* invert under the circle */
+}
+
+/*----------------- START NAVIGATION BAR ----------------*/
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: 1000;
+    margin: 0 auto;
+
+    opacity: 0;
+    transform: translateY(-100%); /* Hides the navbar above the viewport */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    pointer-events: none; /* Prevents interaction when hidden */
+}
+
+/* This class will be toggled by JavaScript to show the navbar */
+.top-nav.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo a {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;  
+    opacity: 0.6;
+}
+
+.nav-logo a:hover{ 
+    opacity: 1;
+}
+
+.logo-svg {
+    width: 33px;
+    height: 33px;
+    filter: brightness(0) saturate(100%) invert(1);
+    transition: transform 0.3s ease;
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 21px;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.4px;
+    font-weight: 840;
+    word-wrap: break-word;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+
+.footer {
+  position: absolute;   /* not fixed, not sticky */
+  left: 0;
+  right: 0;
+  bottom: 0;            /* sit at the bottom of the PAGE */
+  z-index: 1001;        /* paints above your canvas (z:1) */
+  /* keep your existing footer styling (colors, layout, etc.) */
+}
+
+.footer-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.footer-section {
+  font-size: 16px;
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section a .fa-envelope,
+.footer-section a .fa-linkedin {
+  margin-right: 8px;
+  vertical-align: middle;
+  font-size: 16px;
+}

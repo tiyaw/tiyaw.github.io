@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klenvor - Portfolio</title>
+  <link rel="stylesheet" href="css/project.css">
+  <!-- Style block for project-specific colors -->
+  <style>
+    :root {
+      --background-color: #40342D;
+      --primary-text-color: #EDCD9E;
+      --secondary-text-color: #f0f0f0;
+      --tertiary-color: #352b25;
+    }
+    /* Force the navbar logo to inherit the project color (--primary-text-color).
+       Hide the inline image and use the anchor as a masked element to paint the logo. */
+    .nav-logo img.logo-svg { display: none; }
+    .nav-logo a {
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      background-color: var(--primary-text-color, #000);
+      -webkit-mask-image: url("assets/img/Homepage/tW.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      mask-image: url("assets/img/Homepage/tW.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/cursor/cursor.css"/>
+  <script src="assets/cursor/cursor.js" defer></script>
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div id="tw-cursor" class="tw-cursor">
+    <div class="tw-cursor__inner"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
+        <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
+        <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
+        <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+      <img class="img-fill" src="assets/img/Projects/Thoughts/Hero-image.png" alt="Thoughts hero image"/>
+    </div>
+
+    <!-- PROJECT DETAILS -->
+    <div class="project-details">
+      <div class="main-heading">
+        <div class="title-container">
+          <div class="title-text">
+            <p><span class="title-span">thoughts?</span><span class="title-space"> </span></p>
+          </div>
+        </div>
+        <div class="discipline-container">
+          <div class="discipline-text">
+            <p>UI/UX | Social media website</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="date-text"><p>Jun 2025</p></div>
+        <div class="question-container">
+          <div class="question-text">
+            <p>how might we create a social space where writers can effortlessly express their deepest, rawest thoughts while keeping a personal, intimate feel?</p>
+          </div>
+        </div>
+        <div class="overview-container">
+          <div class="overview-text">
+            <p>Thoughts is a  visually fun space where writers can easily read, share, and continue each other’s thoughts without the pressure of spending much effort on beautifying their posts. This platform aims to challenge the conventional social media layouts—the so-called “holy grail of the web”— by breaking away from standard design norms. Additionally, it will offer playful and easy-to-use customization options, allowing writers to add personal touches effortlessly while keeping the experience intuitive and inviting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT IMAGES -->
+    <div class="project-images">
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-1.png" alt="Thoughts full width visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-2.png" alt="Thoughts full width visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-3.png" alt="Thoughts full width visual"/>
+      </div>
+     <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-4.png" alt="Thoughts full width visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-5.png" alt="Thoughts full width visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-6.png" alt="Thoughts full width visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-7.png" alt="Thoughts full width visual"/>
+      </div>
+       <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Thoughts/Thoghts-8.png" alt="Thoughts full width visual"/>
+      </div>
+    </div>
+
+    <!-- MORE PROJECTS -->
+    <div class="more-projects">
+      <div class="section-title">
+        <div class="line-left">
+          <div class="line-left-inner"></div>
+        </div>
+        <div class="bts-title-container">
+          <div class="bts-title"><p>more projects</p></div>
+        </div>
+        <div class="line-right">
+          <div class="line-right-inner"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tile">
+          <a href="nike.html">
+          <img src="assets/img/Work/Nike.png" alt="More project 1 thumbnail">
+          </a>
+        </div>
+        <div class="tile">
+          <a href="togedoo.html">
+          <img src="assets/img/Work/Togedoo.png" alt="More project 2 thumbnail">X
+          </a>
+        </div>
+      </div>
+    </div>
+
+      
+  </div> <!-- /.main-content -->
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-section">
+        What did you find interesting? Let's connect and discuss.
+      </div>
+      <div class="footer-section">
+        <a href="mailto:twagh.design@gmail.com">
+          <i class="fa fa-envelope"></i> twagh.design@gmail.com
+        </a>
+      </div>
+      <div class="footer-section">
+        <a href="https://www.linkedin.com/in/tiyawagh/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> www.linkedin.com/in/tiyawagh/
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

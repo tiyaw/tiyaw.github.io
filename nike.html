@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klenvor - Portfolio</title>
+  <link rel="stylesheet" href="css/project.css">
+  <!-- Style block for project-specific colors -->
+  <style>
+    :root {
+      --background-color: #000000;
+      --primary-text-color: #F68C50;
+      --secondary-text-color: #d6d6d6;
+      --tertiary-color: #131313;
+    }
+    /* Force the navbar logo to inherit the project color (--primary-text-color).
+       Hide the inline image and use the anchor as a masked element to paint the logo. */
+    .nav-logo img.logo-svg { display: none; }
+    .nav-logo a {
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      background-color: var(--primary-text-color, #000);
+      -webkit-mask-image: url("assets/img/Homepage/tW.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      mask-image: url("assets/img/Homepage/tW.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+
+  </style>
+  <link rel="stylesheet" href="assets/cursor/cursor.css"/>
+  <script src="assets/cursor/cursor.js" defer></script>
+
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div id="tw-cursor" class="tw-cursor">
+    <div class="tw-cursor__inner"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
+        <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
+        <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
+        <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+      <img class="img-fill" src="assets/img/Projects/Nike/Hero-image.png" alt="Nike hero image"/>
+    </div>
+
+    <!-- PROJECT DETAILS -->
+    <div class="project-details">
+      <div class="main-heading">
+        <div class="title-container">
+          <div class="title-text">
+            <p><span class="title-span"> active forever NIKE campaign</span><span class="title-space"> </span></p>
+          </div>
+        </div>
+        <div class="discipline-container">
+          <div class="discipline-text">
+            <p>Campaign Strategy |  Digital Ads</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="date-text"><p>July 2024</p></div>
+        <div class="question-container">
+          <div class="question-text">
+            <p>how might we expand Nike’s audience to senior citizens while staying true to its spirit of motivation and movement?</p>
+          </div>
+        </div>
+        <div class="overview-container">
+          <div class="overview-text">
+            <p>Through extensive market research and audience analysis, our team of 13 developed “Active Now, Active Forever,” a repositioning strategy and campaign that celebrated active aging. Blending humor, joy, and empowerment, we crafted visuals and storytelling that redefined Nike’s inclusivity—making movement a mindset, not an age.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT IMAGES -->
+    <div class="project-images">
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Nike/Nike-1.png" alt="Nike full width visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Nike/Nike-2.png" alt="Nike aspect ratio visual"/>
+      </div>
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Nike/Nike-insta.png" alt="Nike aspect ratio visual"/>
+      </div>
+     <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/Nike/Nike-6.png" alt="Nike aspect ratio visual"/>
+      </div>
+    </div>
+
+    <!-- BEHIND THE SCENES -->
+    <div class="bts-container">
+      <div class="bts-container-inner">
+        <div class="bts-container-content">
+          <div class="project-container">
+            <div class="project-content-container">
+
+              
+              <div class="section-title">
+                <div class="line-left">
+                  <div class="line-left-inner"></div>
+                </div>
+                <div class="bts-title-container">
+                  <div class="bts-title"><p>behind the scenes</p></div>
+                </div>
+                <div class="line-right">
+                  <div class="line-right-inner"></div>
+                </div>
+              </div>
+
+
+              <div class="bts-content">
+                <!-- Item 1 -->
+                <div class="bts-item">
+                  <div class="bts-text">
+                    <li>
+                      <span class="bts-number">1. understanding in which sector nike falls in<br></span>
+                      <span class="bts-description">Began by understanding Klenvor's current market positioning, tone, and visual identity to identify strengths and areas for refinement</span>
+                    </li>
+                  </div>
+                  <div class="bts-images">
+                    <div class="bts-image">
+                      <img class="img-fill" src="assets/img/Projects/Nike/BTS-1.png"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bts-item">
+                  <div class="bts-text">
+                    <li>
+                      <span class="bts-number">2. understanding the size of NIKE on global level<br></span>
+                      <span class="bts-description">Studied social media content of both international and Indian beauty brands. Found that global brands often use Pinterest-style visuals to create desire and aspiration, while Indian brands focus on educational content tailored to specific audiences, such as makeup artists or young women.</span>
+                    </li>
+                  </div>
+                  <div class="bts-images">
+                    <div class="bts-image">
+                      <img class="img-fill" src="assets/img/Projects/Nike/BTS-2.png"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bts-item">
+                  <div class="bts-text">
+                    <li>
+                      <span class="bts-number">3. studying the brand<br></span>
+                      <span class="bts-description">Collected inspiration from skincare and beauty brands to understand how multicolor is used in packaging. Most brands either use two-color combinations, keep an entire product range in one color with other sets in similar-value colors, or use black and white as a base when applying multicolor across different ranges. For Klenvor, we challenged this pattern by pairing the brand's peachy pink with four additional colors, creating a more distinct identity.</span>
+                    </li>
+                  </div>
+                  <div class="bts-images">
+                    <div class="bts-image">
+                      <img class="img-fill" src="assets/img/Projects/Nike/BTS-3.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.bts-content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MORE PROJECTS -->
+    <div class="more-projects">
+      <div class="section-title">
+        <div class="line-left">
+          <div class="line-left-inner"></div>
+        </div>
+        <div class="bts-title-container">
+          <div class="bts-title"><p>more projects</p></div>
+        </div>
+        <div class="line-right">
+          <div class="line-right-inner"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tile">
+          <a href="klenvor.html">
+          <img src="assets/img/Work/klenvor.png" alt="More project 1 thumbnail">
+          </a>
+        </div>
+        <div class="tile">
+          <a href="youshouldbehair.html">
+          <img src="assets/img/Work/YSBH.png" alt="More project 2 thumbnail">X
+          </a>
+        </div>
+      </div>
+    </div>
+
+      
+  </div> <!-- /.main-content -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-section">
+        What did you find interesting? Let's connect and discuss.
+      </div>
+      <div class="footer-section">
+        <a href="mailto:twagh.design@gmail.com">
+          <i class="fa fa-envelope"></i> twagh.design@gmail.com
+        </a>
+      </div>
+      <div class="footer-section">
+        <a href="https://www.linkedin.com/in/tiyawagh/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> www.linkedin.com/in/tiyawagh/
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
