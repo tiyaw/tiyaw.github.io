@@ -14,30 +14,56 @@
     <script src="assets/cursor/cursor.js" defer></script>
 </head>
 
+<!-- Style block for project-specific colors -->
+  <style>
+    :root {
+      --background-color: #f6f6f6;
+      --text-color: #4f4c4c;
+    }
+   /* Force the navbar logo to inherit the project color (--primary-text-color).
+       Hide the inline image and use the anchor as a masked element to paint the logo. */
+    .nav-logo img.logo-svg { display: none; }
+    .nav-logo a {
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      background-color: var( --text-color);
+      -webkit-mask-image: url("assets/img/Homepage/tW.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      mask-image: url("assets/img/Homepage/tW.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+
+  </style>
+  
+</head>
+
 <body>
   <!-- Custom cursor -->
   <div id="tw-cursor" class="tw-cursor">
     <div class="tw-cursor__inner"></div>
   </div>
 
-<!---------- START NAVIGATION BAR ---------->
-<header> 
-    <nav class="top-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="Assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
-                <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
-                <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
-                <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<!-- NAVIGATION BAR -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
+        <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
+        <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
+        <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
+      </ul>
+    </div>
+  </nav>
 <!---------- END NAVIGATION BAR ---------->
 
 <!---------- START PROJECTS SECTION ---------->
