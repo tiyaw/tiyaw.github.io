@@ -95,7 +95,7 @@ canvas {
     left: 0;
     right: 0;
     background: transparent;
-    z-index: 1000;
+    z-index: 10020;  /* higher than other UI elements to ensure clickability */
     margin: 0 auto;
 
     opacity: 0;

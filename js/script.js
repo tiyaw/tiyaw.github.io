@@ -22,7 +22,7 @@ Together, NID and RISD shaped my belief that design is a bridge between craft an
   ],
   keywordLinks: {
     "graphic design": "https://www.linkedin.com/in/tiyawagh/",
-    "branding": "https://www.figma.com/deck/OBua9hNavWCXq5AG7t8fPD/BRANDING-MARKETING-PORTFOLIO?node-id=2007-165&viewport=217%2C251%2C0.07&t=kuEpKFXDALXvAJO8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    "branding": "triplecanopy.html",
     "ui/ux": "https://www.figma.com/deck/nsVcGOgg7yR6TH6dTasCGa/UI-UX-PORTFOLIO-FINAL?node-id=1-5637&viewport=-1233%2C-730%2C0.52&t=qKcs5v3cRcBXueq9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     "indian artforms": "https://www.figma.com/deck/J25xsvCD2cvrG6JdKbHBVk/INDIAN-ARTFORMS-WORK?node-id=2007-13&p=f&viewport=294%2C305%2C0.05&t=zG84NUo5sC4ikO1l-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     "creative coding": "https://tiyaw.github.io/print-digital/",

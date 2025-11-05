@@ -1,0 +1,97 @@
+/* UI Components - Snackbar and Arrow */
+.tw-snackbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  /* place above page footer (footer uses z-index:1001) so it remains clickable/visible */
+  z-index: 10010;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: auto;
+}
+
+.tw-snackbar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tw-info-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%; /* circular */
+  /* ensure icons sit above footer and other content so they're clickable */
+  z-index: 10010;
+  cursor: pointer !important;
+  opacity: 0;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.tw-info-icon::before {
+  content: 'i';
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Archivo', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.tw-info-icon.visible {
+  opacity: 1;
+}
+
+.tw-scroll-arrow {
+  position: fixed;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%; /* circular */
+  /* ensure icons sit above footer and other content so they're clickable */
+  z-index: 10010;
+  cursor: pointer !important;
+  opacity: 0;
+  transition: all 0.28s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.tw-scroll-arrow.visible {
+  opacity: 1;
+}
+
+.tw-scroll-arrow::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.tw-scroll-arrow.up::before {
+  transform: rotate(-135deg);
+}
