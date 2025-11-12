@@ -1,4 +1,5 @@
-// UI Components Manager
+//-------- Homepage UI Components Manager -----------
+
 class UIComponentsManager {
   constructor() {
     this.snackbar = null;
@@ -221,3 +222,5 @@ class UIComponentsManager {
 document.addEventListener('DOMContentLoaded', () => {
   new UIComponentsManager();
 });
+
+//-------- End Homepage UI Components Manager -----------

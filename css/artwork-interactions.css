@@ -1,0 +1,40 @@
+/* Artwork Interactions Styles */
+
+/* Hover effects for artwork items */
+.masonry .column img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.masonry .column img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* Tooltip styles */
+.tw-artwork-tooltip {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  max-width: 280px;
+  text-align: center;
+}
+
+.tw-artwork-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* (modal styles removed) */

@@ -7,10 +7,11 @@
     <meta name="description" content="Portfolio - Tiya Wagh">
     <meta name="keywords" content="Tiya Wagh, Portfolio, Graphic Designer, UI/UX Designer, Branding, Marketing, Design">
     <meta name="author" content="Tiya Wagh">
-    <title>Tiya Wagh</title>
+    <title>work</title>
     <link rel="stylesheet" href="css/work.css"> 
-    <link rel="stylesheet" href="assets/cursor/cursor.css">
-    <link rel="icon" href="assets/img/favicon.png" type="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/cursor/cursor.css">
+    <link rel="icon" href="assets/img/Homepage/tW.svg" type="image/svg+xml">
     <script src="assets/cursor/cursor.js" defer></script>
 
    <!-- Style block for project-specific colors -->
@@ -18,6 +19,9 @@
     :root {
       --background-color: #f6f6f6;
       --text-color: #4f4c4c;
+      /* ensure nav icons and links follow the page text/logo color */
+      --nav-icon-color: var(--text-color);
+      --nav-link-color: var(--text-color);
     }
    /* Force the navbar logo to inherit the project color (--primary-text-color).
        Hide the inline image and use the anchor as a masked element to paint the logo. */
@@ -61,22 +65,26 @@
         <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
         <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
       </ul>
+      <div class="nav-social">
+        <a href="mailto:twagh.design@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/tiyawagh/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/tiyayaya_w/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.behance.net/tiyaw" aria-label="Behance" target="_blank" rel="noopener"><i class="fa fa-behance"></i></a>
+      </div>
     </div>
   </nav>
 
 <!---------- START PROJECTS SECTION ---------->
 <section class="container">
-  <!-- <div class="project-tab-container">
-      <div class="tab active" onclick="filterProjects('all', event)">All</div>
-      <div class="tab" onclick="filterProjects('branding', event)"> Marketing/Branding</div>
-      <div class="tab" onclick="filterProjects('ui/ux', event)"> UI/UX</div>
-      <div class="tab" onclick="filterProjects('AI', event)"> Emerging Tech </div>
-    </div>
-  </div> -->
-
+  <!-- Filter tags (All / Branding / UI/UX) -->
+  <div class="project-tab-container" aria-label="project filters">
+    <button class="tab active" data-filter="all" type="button">All</button>
+    <button class="tab" data-filter="branding" type="button">Branding</button>
+    <button class="tab" data-filter="ui/ux" type="button">UI/UX</button>
+  </div>
 
   <div class="card-container"> 
-      <a href="triplecanopy.html" class="card" data-category="branding" aria-label="nike project">
+      <a href="triplecanopy.html" class="card" data-category="branding" aria-label="triple canopy">
         <img src="assets/img/Work/triplecanopy.png" alt="triple canopy symposium 2025">
         <div class="card-content" style="background: rgba(51, 46, 45, 0.9); color: #F3F0E9;">
           <h3>triple canopy symposium 2025</h3>
@@ -84,7 +92,7 @@
         </div>
       </a>
 
-      <a href="togedoo.html" class="card" data-category="branding" aria-label="togedoo project">
+      <a href="togedoo.html" class="card" data-category="ui/ux" aria-label="togedoo project">
         <img src="assets/img/Work/Togedoo.png" alt="togedoo">
         <div class="card-content" style="background: rgba(0, 0, 0, 0.9); color: #F968B2;">
           <h3>togedoo</h3>
@@ -92,8 +100,7 @@
         </div>
       </a>
 
-      
-      <a href="thoughts.html" class="card" data-category="branding" aria-label="klenvor project">
+      <a href="thoughts.html" class="card" data-category="ui/ux" aria-label="thoughts project">
         <img src="assets/img/Work/Thoughts.png" alt="Thoughts">
         <div class="card-content" style="background: #403423e6; color: #EDCD9E;">
          <h3>thoughts?</h3>
@@ -105,12 +112,12 @@
         <img src="assets/img/Work/Nike.png" alt="nike">
         <div class="card-content" style="background: rgba(0, 0, 0, 0.9); color: #F68C50;">
           <h3>activeforever NIKE campiagn</h3>
-          <h6>Brand Repositioning Strategy | Campaign Strategy | Content</h6>
+          <h6>Brand Repositioning Strategy | Campaign Strategy </h6>
         </div>
       </a>
 
-      <a class="card">
-        <img src="assets/img/Work/On-track.gif" alt="togedoo">
+      <a class="card" data-category="branding" aria-label="coming soon">
+        <img src="assets/img/Work/On-track.gif" alt="on track">
         <div class="card-content" style="background: rgba(29, 123, 206, 0.9); color: #ffffff;">
           <h1>(COMING SOON...)</h1>
           <h3>on track</h3>
@@ -126,15 +133,15 @@
         </div>
       </a>
 
-      <a href="youshouldbehair.html" class="card" data-category="branding" aria-label="YOUSHOULDbeHAIR internship">
+      <a href="youshouldbehair.html" class="card" data-category="branding" aria-label="YOUSHOULDbeHAIR project">
           <img src="assets/img/Work/YSBH.png" alt="YOUSHOULDbeHAIR">
           <div class="card-content" style="background: rgba(31, 30, 30, 0.9); color: #D1DDE6;">
-            <h3>YOUSHOULDbeHAIR</h3`>
+            <h3>YOUSHOULDbeHAIR</h3>
           <h6>Brand Guidelines | Color theory | Social media </h6>
           </div>
       </a>
 
-      <a href="boardgame.html" class="card" data-category="branding" aria-label="YOUSHOULDbeHAIR internship">
+      <a href="boardgame.html" class="card" data-category="ui/ux" aria-label="boardgame project">
           <img src="assets/img/Work/Boardgame.png" alt="Board game">
           <div class="card-content" style="background: rgba(31, 30, 57, 0.9); color: #ffffff;">
             <h3>marketing of board games</h3>
@@ -167,3 +174,5 @@
 
 </body>
 </html>
+
+<script src="js/project-filter.js" defer></script>

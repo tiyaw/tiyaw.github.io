@@ -68,13 +68,16 @@ body {
 }
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {
-    color: var(--primary-text-color);
+    color: var(--text-color, var(--primary-text-color, #000));
     font-size: 20px;
     font-family: 'Archivo', sans-serif;
     font-variation-settings: 'wdth' 85;
@@ -90,6 +93,27 @@ body {
   opacity: 0.8;
 }
 
+/* Nav social icons: match homepage spacing and sizing; color follows per-page --text-color */
+.nav-social {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  margin-left: 12px; /* space between menu and icons when icons on the right */
+}
+
+.nav-social a {
+  color: var(--text-color, rgba(0,0,0,0.6));
+  text-decoration: none;
+  font-size: 18px; /* same visual weight as homepage */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.nav-social a:hover { color: var(--text-color); opacity: 0.9; }
+
 
 /*----------------- END NAVIGATION BAR ----------------*/
 
@@ -98,21 +122,21 @@ body {
 
 .container {
   padding: 5px 30px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* Project Filter */
 .project-tab-container {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 33px;
+  margin-bottom: 50px;
 }
 
 .tab {
   cursor: pointer;
-  padding: 14px 36px; 
-  font-size: 1.15rem;
+  padding: 10px 20px; 
+  font-size: 1rem;
   background-color: #e0e0e0; 
   color: #444;
   font-weight: 600;
@@ -155,8 +179,20 @@ body {
   transition: transform 0.2s ease-out;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0px;
  
+}
+
+/* Smooth fade/transform for filtering show/hide */
+.card {
+  transition: opacity 0.35s ease, transform 0.2s ease-out;
+  will-change: opacity, transform;
+}
+
+.card.is-hidden {
+  opacity: 0;
+  transform: scale(0.98);
+  pointer-events: none;
 }
 
 .card img {
@@ -357,6 +393,7 @@ body {
 }
 
 .footer-section a .fa-envelope,
+.footer-section a .fa-envelope-o,
 .footer-section a .fa-linkedin {
   margin-right: 0.42vw;
   vertical-align: middle;

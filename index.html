@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tiya Wagh</title>
+  <title>index</title>
+  <link rel="icon" href="assets/img/Homepage/tW.svg" type="image/svg+xml">
 
   <!-- CSS (ensure the filename matches exactly) -->
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/ui-components.css"/>
+  <link rel="stylesheet" href="css/mobile-overlay.css"/>
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@85,700&display=swap" rel="stylesheet"/>
 
-  <!-- Libraries (must come before script.js) -->
+  <!-- Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
   <!-- Your app code -->
   <script src="js/script.js" defer></script>
   <script src="js/ui-components.js" defer></script>
+  <script src="js/mobile-overlay.js" defer></script>
 </head>
 <body>
   <!-- Custom cursor -->
@@ -30,19 +33,25 @@
 
  <!-- Nav Bar -->
   <nav class="top-nav">
-    <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">
-                    <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
-               <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
-               <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
-               <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
-            </ul>
-     </div>
+  <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
+         <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
+         <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
+         <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
+      </ul>
+      <div class="nav-social">
+        <a href="mailto:twagh.design@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/tiyawagh/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/tiyayaya_w/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.behance.net/tiyaw" aria-label="Behance" target="_blank" rel="noopener"><i class="fa fa-behance"></i></a>
+      </div>
+  </div>
   </nav>
 
   <!-- Center Logo -->
@@ -56,16 +65,16 @@
     <div class="footer-section">
       Anything interesting? Let's connect and discuss.
     </div>
-    <div class="footer-section">
-      <a href="mailto:twagh.design@gmail.com">
-        <i class="fa fa-envelope"></i> twagh.design@gmail.com
-      </a>
-    </div>
-    <div class="footer-section">
-      <a href="https://www.linkedin.com/in/tiyawagh/" target="_blank" rel="noopener">
-        <i class="fa fa-linkedin"></i> www.linkedin.com/in/tiyawagh/
-      </a>
-    </div>
+      <div class="footer-section">
+        <a href="mailto:twagh.design@gmail.com">
+          <i class="fa fa-envelope-o"></i> twagh.design@gmail.com
+        </a>
+      </div>
+      <div class="footer-section">
+        <a href="https://www.linkedin.com/in/tiyawagh/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> www.linkedin.com/in/tiyawagh/
+        </a>
+      </div>
   </div>
   </footer>
 

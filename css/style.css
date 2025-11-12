@@ -120,6 +120,29 @@ canvas {
     align-items: center;
 }
 
+/* Social icons placed at the far left of the nav */
+.nav-social {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  margin-right: 12px; /* small gap before logo */
+}
+
+.nav-social a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 18px; /* match visual weight with nav links */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.nav-social a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 .nav-logo a {
     width: 33px;
     height: 33px;
@@ -143,9 +166,12 @@ canvas {
 
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {
@@ -198,6 +224,7 @@ canvas {
 }
 
 .footer-section a .fa-envelope,
+.footer-section a .fa-envelope-o,
 .footer-section a .fa-linkedin {
   margin-right: 8px;
   vertical-align: middle;

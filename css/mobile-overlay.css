@@ -1,0 +1,27 @@
+/* Mobile Overlay Styles */
+.tw-mobile-overlay {
+  position: fixed;
+  inset: 0;  /* shorthand for top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000; /* above everything else */
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.tw-mobile-overlay.visible {
+  display: flex;
+}
+
+.tw-mobile-overlay__message {
+  color: rgba(255, 255, 255, 0.95);
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 80%;
+  letter-spacing: 0.02em;
+}
