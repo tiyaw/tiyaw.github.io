@@ -107,19 +107,19 @@ class ArtworkInteractionsManager {
   addTemporaryDescriptions() {
     // Add sample descriptions - replace these with actual data attributes in HTML
     const descriptions = [
-      'Interactive visual experiment created in TouchDesigner',
+      'Real Time Generative art in TouchDesigner',
       'AR filter developed using Lens Studio',
-      'Digital artwork exploring geometric patterns',
-      'Real-time audio visualization in TouchDesigner',
+      'Polgon digital portrai in Iluustrator',
+      'Genrative art in TouchDesigner',
       'Motion graphics for Calvary project',
-      'Architecture visualization study',
-      'Animated logo sequence for Calvary',
+      'Creating patterns inspired from Sarkhej Roza architecture',
+      'Generative motion graphics Calvary',
       'AR experience built with Adobe Aero',
-      'Generative art experiment',
-      'AI-generated artwork using RunwayML',
-      'Abstract digital composition',
-      'Typography exploration in color',
-      'Traditional Indian art interpretation'
+      'Generative motion graphics Calvary',
+      'AI-generated graphics using RunwayML',
+      'Creating patterns inspired from Sarkhej Roza architecture',
+      'AI-generated graphics using RunwayML',
+      'Telling my childhood stories onin traditional Pattachitra art.'
     ];
     
     this.images.forEach((img, index) => {
