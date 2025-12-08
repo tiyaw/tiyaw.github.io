@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>youshouldbehair</title>
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Style block for project-specific colors -->
+  <style>
+    :root {
+      --background-color: #193744;
+      --primary-text-color: #FACA77;
+      --secondary-text-color: #e1e1e1;
+      --tertiary-color: #1a343f;
+    }
+    /* Force the navbar logo to inherit the project color (--primary-text-color).
+       Hide the inline image and use the anchor as a masked element to paint the logo. */
+    .nav-logo img.logo-svg { display: none; }
+    .nav-logo a {
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      background-color: var(--primary-text-color, #000);
+      -webkit-mask-image: url("assets/img/Homepage/tW.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      mask-image: url("assets/img/Homepage/tW.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+
+  </style>
+  <link rel="stylesheet" href="assets/cursor/cursor.css"/>
+  <script src="assets/cursor/cursor.js" defer></script>
+
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div id="tw-cursor" class="tw-cursor">
+    <div class="tw-cursor__inner"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="assets/img/Homepage/tW.svg" alt="Tiya Wagh Logo" class="logo-svg">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"> <a href="work.html" class="nav-link">work</a> </li>
+        <li class="nav-item"> <a href="explore.html" class="nav-link">explore</a> </li>
+        <li class="nav-item"> <a href="blog.html" class="nav-link">blog</a> </li>
+        <li class="nav-item"> <a href="about.html" class="nav-link">about me</a> </li>
+      </ul>
+      <div class="nav-social">
+        <a href="mailto:twagh.design@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/tiyawagh/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/tiyayaya_w/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.behance.net/tiyaw" aria-label="Behance" target="_blank" rel="noopener"><i class="fa fa-behance"></i></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+      <img class="img-fill" src="assets/img/Projects/On-track/Hero-image.gif" alt="On Track hero image"/>
+    </div>
+
+    <!-- PROJECT DETAILS -->
+    <div class="project-details">
+      <div class="main-heading">
+        <div class="title-container">
+          <div class="title-text">
+            <p><span class="title-span">on track </span><span class="title-space"> </span></p>
+          </div>
+        </div>
+        <div class="discipline-container">
+          <div class="discipline-text">
+            <p>Identity Design | Systems Thinking | Campaign Strategy</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="date-text"><p>May 2025</p></div>
+        <div class="question-container">
+          <div class="question-text">
+            <p>how can tracking emotions transform from a clinical task into a playful, heartwarming experience?</p>
+          </div>
+        </div>
+        <div class="overview-container">
+          <div class="overview-text">
+            <p>This project creates a brand that takes on mental health in a warm, human way—starting with measurement-based patient care. Instead of treating surveys and tracking as clinical or overwhelming, the brand turns them into something playful and easy to connect with. Through stickers, stamps, trackers, and simple templates, it helps both individuals and clinicians bring joy, gentleness, and creativity into checking in on well-being. Designed for young adults, the brand makes emotional data something you can actually see, feel, and celebrate—proving that care can be soft, expressive, and genuinely human.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT IMAGES -->
+    <div class="project-images">
+      <div class="full-width-image">
+        <img class="img-fill" src="assets/img/Projects/On-track/poster.png" alt="full width visual"/>
+      </div>
+    </div>
+
+   
+    <!-- MORE PROJECTS -->
+    <div class="more-projects">
+      <div class="section-title">
+        <div class="line-left">
+          <div class="line-left-inner"></div>
+        </div>
+        <div class="bts-title-container">
+          <div class="bts-title"><p>more projects</p></div>
+        </div>
+        <div class="line-right">
+          <div class="line-right-inner"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tile">
+          <a href="klenvor.html">
+          <img src="assets/img/Work/klenvor.png" alt="More project 1 thumbnail">
+          </a>
+        </div>
+        <div class="tile">
+          <a href="nike.html">
+          <img src="assets/img/Work/Nike.png" alt="More project 2 thumbnail">X
+          </a>
+        </div>
+      </div>
+    </div>
+
+      
+  </div> <!-- /.main-content -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-section">
+        Anything interesting? Let's connect and discuss.
+      </div>
+      <div class="footer-section">
+        <a href="mailto:twagh.design@gmail.com">
+          <i class="fa fa-envelope"></i> twagh.design@gmail.com
+        </a>
+      </div>
+      <div class="footer-section">
+        <a href="https://www.linkedin.com/in/tiyawagh/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> www.linkedin.com/in/tiyawagh/
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
